@@ -45,15 +45,22 @@
 - Deployment - 
     - Wrapped the code under Flask web application
     - created Landing Page and Data Form Page
-    - Deployed the app on Azure WEB APP using Github Action
+    - Created Docker Image of entire repository and pushed it in Azure Container Registry
 
-Azure web app link - https://mrkspred135aks.azurewebsites.net/
+## DOCKER COMMANDS USED - 
+    docker build -t mrkspreddocker.azurecr.io/studperformance1:latest . 
+    docker login mrkspreddocker.azurecr.io -u <uname> -p <pwd>
+    docker push mrkspreddocker.azurecr.io/studperformance1:latest
 
-Github Action Screenshot - 
-![Alt text](githubaction.png)
+Azure Web App Link - mrkspreddocker1.azurewebsites.net/predictdata
+Azure Container Registry Link - mrkspreddocker.azurecr.io
 
-Azure Web App UI ScreenShot- 
-![Alt text](azurewebapp.png)
+Docker Image Screenshot - 
+![dockerimage](https://github.com/Savior135/Marks_Prediction_Docker_Deployment/assets/51173566/8b4409eb-9ec4-4626-9ec6-7280df67df69)
+
+Azure Container Registry Screenshot- 
+![webappdocker](https://github.com/Savior135/Marks_Prediction_Docker_Deployment/assets/51173566/74410b1a-18ca-4d5c-b227-831273d51888)
+
 
 
 
